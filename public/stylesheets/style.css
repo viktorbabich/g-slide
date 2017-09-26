@@ -1,0 +1,55 @@
+.fragments__buttons {
+  padding: 40px 0;
+}
+.fragments__list {
+  margin: 0 auto;
+  width: 800px;
+  height: 500px;
+  position: relative;
+}
+.fragments__page {
+  position: absolute;
+  width: 490px;
+  height: 500px;
+  border: 2px solid red;
+  top: 0;
+  left: 0;
+}
+.fragments__page.active__left .fragments__inner_left {
+  transform: translateX(0);
+}
+.fragments__page.active__right .fragments__wrapper {
+  transform: translateX(-500px);
+}
+.fragments__page.active__right .fragments__inner_right {
+  transform: translateX(0);
+}
+.fragments__page.active__right .fragments__inner_left {
+  transform: translateX(0);
+}
+.fragments__wrapper {
+  transition: all 1s ease;
+  width: 490px;
+  height: 500px;
+  border: 2px solid yellow;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.fragments__inner {
+  transition: all 1s ease;
+  position: absolute;
+  width: 490px;
+  height: 500px;
+  border: 2px solid green;
+}
+.fragments__inner_left {
+  transform: translateX(-490px);
+  overflow: hidden;
+  background: yellow;
+}
+.fragments__inner_right {
+  transform: translateX(490px);
+  background: cyan;
+}
